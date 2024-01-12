@@ -1,0 +1,162 @@
+body {
+    background-image: url('D:\\BooksTreckerProjectM\\src\\img\\background.png');
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 65%; /* Изменено на 40% для увеличения размера фотографий и расширения расстояния между ними */
+  margin: 0 3%; /* Изменено на 5% для установки расстояния между изображениями */
+  position: relative; /* Добавлено для позиционирования */
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+/* Полоски тянучки сверху */
+.bars{
+    width: 100%;
+    height: 5vw;
+    margin-top: 3%;
+    margin-bottom: 0.7em;
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+.bars .scrollBars{
+    
+    border-radius: 3px;
+    height: 0.7vw;
+    width: 12%;
+    margin-bottom: 1%;
+    background-color: #3B2915;
+}
+
+.header
+{   
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+.header h1{
+    color: #332E21;
+    font-size: 8vw;
+    font-family: 'Alata';
+    font-weight: 500;
+    margin-top: 1%;
+}
+.header p{
+    font-family: 'Montserrat Alternates';
+    font-size: 4.5vw;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.header img {
+    width: 56%;
+}
+
+.content {
+    padding: 5%;
+}
+
+.content-button {
+  flex: 1;
+  display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.download-button {
+  padding: 3% 10%;
+  border: 1% solid #3C3731; /* Цвет рамки и её толщина */;
+  border-radius: 30%;
+  background-color: #D8D2C4;
+  color: #4C483D;
+  font-family: 'Montserrat Alternates';
+  font-size: 4.5vw;
+  font-weight: 900;
+}
+
+.inf-button{
+  padding: 1% 5%;
+  /* border: 4% solid #FFFFFF;  */
+  border: none;
+  border-radius: 10%;
+  background-color: #FCF6E9;
+  color: #4C483D;
+  font-family: 'Montserrat Alternates';
+  font-size: 4vw;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.file-text {
+  color: #332E21;
+  font-family: 'Montserrat Alternates';
+  font-size:  2.9vw;
+  margin: 0;
+}
+.content p{
+  color: #332E21;
+  font-size: 4.5vw;
+  font-family: 'Montserrat Alternates';
+}
+.content h1{
+  color: #332E21;
+  font-size: 7vw;
+  font-family: 'Montserrat Alternates';
+  margin-bottom: 15%;
+}
+
+.content h3{
+  color: #332E21;
+  font-size: 5vw;
+  font-family: 'Montserrat Alternates';
+  margin-bottom: 15%;
+}
+
+.footer {
+  width: 100%;  
+  background-color: #635B50;
+  padding: 1% 1% 2% 5%;
+  margin-top: auto;
+  margin-bottom: -3%; /* Убираем отступ снизу */
+  margin-left: -3%;
+  margin-right: 0;
+  position: relative;
+
+  color: #FFF9EB;
+  font-size: 4vw;
+  font-family: 'Montserrat Alternates';
+}
+.p-footer-low{
+  margin-left: 5%;
+  margin-bottom: 7%;
+
+  display: flex;
+  align-items: center;
+}
+.p-footer-low a{
+  color: #FFF9EB;
+  font-family: 'Montserrat Alternates';
+}
+.p-footer-low img{
+  width: 6%;  
+  margin-right: 3%; 
+}
