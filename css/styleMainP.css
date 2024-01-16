@@ -4,7 +4,7 @@ body {
 
 .carousel-container {
   overflow: hidden;
-  width: 100%;
+  position: relative;
   
 }
 
@@ -14,9 +14,9 @@ body {
 }
 
 .carousel-item {
-  flex: 0 0 65%; /* Изменено на 40% для увеличения размера фотографий и расширения расстояния между ними */
-  margin: 0 3%; /* Изменено на 5% для установки расстояния между изображениями */
-  position: relative; /* Добавлено для позиционирования */
+  flex: 0 0 65%; 
+  margin: 0 3%; 
+  position: relative;  
 }
 
 .carousel-item img {
@@ -72,6 +72,10 @@ body {
 .content {
     padding: 5%;
 }
+.content img{
+  height: 8vw; 
+  margin-top: 5%;
+}
 
 .content-button {
   flex: 1;
@@ -79,31 +83,8 @@ body {
     flex-direction: column; 
     align-items: center;
 }
-
-.download-button {
-  padding: 3% 10%;
-  border: 1% solid #3C3731; /* Цвет рамки и её толщина */;
-  border-radius: 30%;
-  background-color: #D8D2C4;
-  color: #4C483D;
-  font-family: 'Montserrat Alternates';
-  font-size: 4.5vw;
-  font-weight: 900;
-}
-
-.inf-button{
-  padding: 1% 5%;
-  /* border: 4% solid #FFFFFF;  */
-  border: none;
-  border-radius: 10%;
-  background-color: #FCF6E9;
-  color: #4C483D;
-  font-family: 'Montserrat Alternates';
-  font-size: 4vw;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-
+.content-button img{
+  height: 13vw; 
 }
 
 .file-text {

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <<head>
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styleMainP.css"></linkrel>
+    <link rel="stylesheet" href="css/styleMainP.css">
 
 </head>
 <body>
@@ -16,8 +16,8 @@
 
     <div class="header">
         <img src="img/logo.svg" alt="Logo">
-        <h1>BooksTrecker</h1>
-        <p>Читайте с умом, отслеживайте с BooksTrecker</p>
+        <h1>BooksTracker</h1>
+        <p>Читайте с умом, отслеживайте с BooksTracker</p>
     </div>
 
     <div class="carousel-container">
@@ -41,7 +41,9 @@
       </div>
 
     <div class="content-button">
-      <button class="download-button" onclick="downloadFile()">Скачать</button>
+      <a href="downlodeFile.png" download="BooksTracker">
+        <img src="img/buttonDownload.svg" alt="скачать" >
+      </a>
       <p class="file-text">.apk файл</p>
     </div>
 
@@ -54,10 +56,10 @@
         <p><b>Почему следить за своими книгами важно?</b></p>
         <p>Это помогает формировать читательские привычки и отслеживать сколько 
             и как быстро вы читаете</p>
-    </div>
 
-        <button onclick="window.location.href='fonts/userAgreement.html'" class="inf-button">Пользовательское соглашение</button>
-        <button onclick="window.location.href='fonts/instructionsForUse.html'" class="inf-button">Руководство пользователя</button>
+        <a href="fonts/userAgreement.html"><img src="img/buttonAgreement.svg" alt="Пользовательское соглашение"></a>
+        <a href="fonts/userAgreement.html"><img src="img/buttonManual.svg" alt="Инструкция по использованию"></a>
+    </div>
 
     <div class="footer">
         <p><b>Обратная связь</b></p>
@@ -77,6 +79,6 @@
 
     </div>
 
-    <script src="js/scriptMain.js"></script>
+    <script src="js/scriptMain.js"></script> 
 </body>
 </html>
