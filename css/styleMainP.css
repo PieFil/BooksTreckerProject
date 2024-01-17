@@ -1,27 +1,41 @@
 body {
     background-image: url('../img/background.png');
 }
+/* 
+.layered {
+  background: 
+     linear-gradient(to right, #F8F3F1, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #F8F3F1),
+     linear-gradient(to left, #F8F3F1, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #F8F3F1);
+} */
 
-.carousel-container {
-  overflow: hidden;
+.layered {
   position: relative;
-  
+  padding-top: 0;
+  margin-right: -5%;
 }
 
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  flex: 0 0 65%; 
-  margin: 0 3%; 
-  position: relative;  
-}
-
-.carousel-item img {
+.layered:before,
+.layered:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 100%;
+  z-index: 1; /* Добавьте z-index */
+  pointer-events: none; /* Добавьте эту строку */
 }
+
+.layered:before {
+  left: 0;
+  background: linear-gradient(to right, #F8F3F1, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #F8F3F1);
+}
+
+.layered:after {
+  right: 0;
+  background: linear-gradient(to left, #F8F3F1, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #F8F3F1);
+}
+
+
 
 /* Полоски тянучки сверху */
 .bars{
